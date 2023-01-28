@@ -158,3 +158,67 @@ footer .contact-us ul {
 .footer-menu-group h4 {
     margin-bottom: 32px;
 }
+
+
+/* Top Cities Section  */
+.top-cities {
+    margin: 200px 0;
+    padding: 100px 0;
+}
+
+.top-cities .section-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.top-cities .section-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+
+.top-cities .section-header p {
+    font-size: 20px;
+    color: #889099;
+}
+
+.location-card {
+    position: relative;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.location-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 240px;
+}
+
+.location-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(59, 77, 129, 0.7) -12.86%, rgba(59, 77, 129, 0) 106.85%);
+    padding: 24px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.location-card .overlay .info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.location-card .overlay .info p {
+    font-size: 16px;
+}
