@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Public+Sans:wght@300;400;500;600;700;800&display=swap');
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Public Sans', sans-serif; */
+
+/* RESET CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul, li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+}
+
+html body .container-fluid {
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+/* Top Header  */
+.top-header {
+    background: #2C3A61;
+    padding: 26px 0;
+    color: white;
+}
+
+.top-header-left a {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.top-header-left a img{
+    margin-right: 12px;
+}
+.top-header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-header-right > a {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+}
+.top-header-right > a img {
+    margin-right: 12px;
+}
+
+.top-header-right ul li a {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-header-right ul {
+    border-right: 1px solid white;
+    padding-right: 28px;
+}
+
+/* Primary Header  */
+header {
+    padding: 27px 0;
+    background-color: white;
+}
+
+header .primary-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .menu li a {
+    padding: 12px 24px;
+    font-size: 14;
+    text-transform: uppercase;
+    color: black;
+}
+
+header .menu li:last-child a {
+    padding-right: 0;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    height: 45px;
+    width: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
