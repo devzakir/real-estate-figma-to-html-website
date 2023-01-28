@@ -32,6 +32,31 @@ html body .container-fluid {
     margin: 0 auto;
 }
 
+/* Reuseable Classes */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+
+.section-header p {
+    font-size: 20px;
+    color: #889099;
+}
+
+section.section {
+    margin: 200px 0;
+    padding: 100px 0;
+}
+
+
 /* Top Header  */
 .top-header {
     background: #2C3A61;
@@ -161,27 +186,6 @@ footer .contact-us ul {
 
 
 /* Top Cities Section  */
-.top-cities {
-    margin: 200px 0;
-    padding: 100px 0;
-}
-
-.top-cities .section-header {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.top-cities .section-header h2 {
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 24px;
-}
-
-
-.top-cities .section-header p {
-    font-size: 20px;
-    color: #889099;
-}
 
 .location-card {
     position: relative;
@@ -222,3 +226,40 @@ footer .contact-us ul {
 .location-card .overlay .info p {
     font-size: 16px;
 }
+
+
+/* properties type  */
+.properties-type {
+    background-color: #EDEFF6;
+}
+
+.properties-type-item {
+    background-color: transparent;
+    padding: 24px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.properties-type-item:hover {
+    background-color: white;
+}
+
+.properties-type-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 24px 0;
+}
+
+.properties-type-item p {
+    font-size: 16px;
+    color: #889099;
+    margin-bottom: 24px;
+}
+
+.properties-type-item a {
+    font-size: 16px;
+    color: #4A60A1;
+}
+
+
