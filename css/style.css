@@ -63,14 +63,14 @@ html body .container-fluid {
     margin-right: 12px;
 }
 
-.top-header-right ul li a {
+.social-media li a {
     height: 40px;
     width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.top-header-right ul {
+.social-media {
     border-right: 1px solid white;
     padding-right: 28px;
 }
@@ -112,4 +112,49 @@ header .menu li:last-child a {
     align-items: center;
     border: 1px solid gray;
     border-radius: 3px;
+}
+
+
+/* Footer */
+footer .contact-us a.logo {
+    margin-bottom: 24px;
+}
+
+footer h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+footer .contact-us p {
+    color: #6D737A;
+    margin-bottom: 8px;
+}
+
+footer .contact-us ul li a {
+    background-color: #EDEFF6;
+    color: #4A60A1;
+    height: 48px;
+    width: 48px;
+}
+
+footer .contact-us ul {
+    gap: 16px;
+    margin-top: 16px;
+}
+
+
+.footer-menu-group ul {
+    flex-direction: column;
+}
+
+.footer-menu-group ul li a {
+    padding: 8px 0;
+    color: #6D737A;
+}
+
+
+.footer-menu-group h4 {
+    margin-bottom: 32px;
 }

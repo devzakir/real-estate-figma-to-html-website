@@ -38,11 +38,18 @@
     }
 }
 
+
+@media (max-width: 1024px){
+    footer .contact-us, footer .footer-menu-group {
+        margin-bottom: 60px;
+    }
+}
+
 @media (max-width: 768px){
     .top-header-right {
         flex-wrap: wrap;
     }
-    .top-header-right ul {
+    .social-media {
         border-right: none;
         padding-right: 0;
     }
