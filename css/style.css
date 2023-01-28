@@ -56,6 +56,15 @@ section.section {
     padding: 100px 0;
 }
 
+.label {
+    font-size: 14px;
+    padding: 5px 13px;
+    margin-right: 10px;
+    background-color: #4A60A1;
+    color: white;
+    display: inline-block;
+    border-radius: 2px;
+}
 
 /* Top Header  */
 .top-header {
@@ -260,6 +269,104 @@ footer .contact-us ul {
 .properties-type-item a {
     font-size: 16px;
     color: #4A60A1;
+}
+
+
+
+/* Properties Listing  */
+
+.listing-card {
+    border-radius: 7px;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0px 25.697px 72.8081px rgba(59, 77, 129, 0.08);
+}
+
+.listing-card .listing-view {
+    height: 240px;
+    width: 100%;
+    position: relative;
+}
+
+.listing-card .listing-view .hot-labels {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.listing-card .listing-view img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.listing-info {
+    padding: 24px;
+}
+
+.listing-info h3 {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color: #363A3D;
+}
+
+.listing-card .amount {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #4A60A1;
+}
+
+.listing-info ul.features {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.listing-info ul.features li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #6D737A;
+}
+
+.listing-footer {
+    border-top: 1px solid #E7E9EB;
+    margin-top: 16px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listing-footer .owner  {
+    display: flex;
+    align-items: center;
+}
+
+.listing-footer .owner p {
+    font-size: 20px;
+    color: #363A3D;
+}
+.listing-footer .owner img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.listing-footer .actions {
+    gap: 12px;
+}
+.listing-footer .actions li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: #EDEFF6;
 }
 
 
