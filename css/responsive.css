@@ -53,6 +53,12 @@
         border-right: none;
         padding-right: 0;
     }
+    .call-to-action h2 { 
+        font-size: 28px;
+    }
+    .call-to-action p { 
+        font-size: 18px;
+    }
 }
 
 
