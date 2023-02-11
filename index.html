@@ -78,16 +78,52 @@
         <div class="hero-content">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-10 col-lg-8 col-xl-6 text-center">
                         <h1>Find Your Dream Home</h1>
                         <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="search-filter">
-            <div class="listing-type">Sale</div>
-            <div class="listing-type">Rent</div>
+        <div class="container listing-filter">
+            <div class="search-filter">
+                <div class="listing-type active">Sale</div>
+                <div class="listing-type">Rent</div>
+            </div>
+            <form action="#">
+                <div class="select-input">
+                    <label for="location"> Locations </label>
+                    <select name="location" id="location">
+                        <option value="#">Select your city</option>
+                        <option value="#">Dhaka</option>
+                        <option value="#">Sylhet</option>
+                        <option value="#">Mymensingh</option>
+                    </select>
+                </div>
+                <div class="select-input">
+                    <label for="propertyType"> Property Type </label>
+                    <select name="propertyType" id="propertyType">
+                        <option value="#">Select property type</option>
+                        <option value="#">Dhaka</option>
+                        <option value="#">Sylhet</option>
+                        <option value="#">Mymensingh</option>
+                    </select>
+                </div>
+                <div class="select-input">
+                    <label for="rentRange"> Rent Range </label>
+                    <select name="rentRange" id="rentRange">
+                        <option value="#">Select rent range</option>
+                        <option value="#">Dhaka</option>
+                        <option value="#">Sylhet</option>
+                        <option value="#">Mymensingh</option>
+                    </select>
+                </div>
+                <div class="select-input">
+                    <a href="#" class="button">
+                        Search
+                    </a>
+                </div>
+            </form>
         </div>
     </section>
 

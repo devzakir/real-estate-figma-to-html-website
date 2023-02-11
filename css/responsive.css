@@ -45,6 +45,30 @@
     }
 }
 
+@media (max-width: 992px){
+    .hero-section form {
+        flex-wrap: wrap;
+    }
+
+    .hero-section form .select-input {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        border-right: 0;
+        border-bottom: 1px solid #CFD3D6
+    }
+
+
+.hero-section form .select-input:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.hero-section form .select-input:first-child {
+    padding-right: 0;
+}
+}
+
 @media (max-width: 768px){
     .top-header-right {
         flex-wrap: wrap;
@@ -58,6 +82,11 @@
     }
     .call-to-action p { 
         font-size: 18px;
+    }
+    .hero-section .hero-content {
+        padding-top: 100px;
+        padding-bottom: 30px;
+        text-align: center;
     }
 }
 
