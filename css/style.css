@@ -83,6 +83,20 @@ section.section {
     border-radius: 2px;
 }
 
+ul.listing-features {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+ul.listing-features li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #6D737A;
+}
+
+
 /* Top Header  */
 .top-header {
     background: #2C3A61;
@@ -145,7 +159,7 @@ header .menu {
 
 header .menu li a {
     padding: 12px 24px;
-    font-size: 14;
+    font-size: 14px;
     text-transform: uppercase;
     color: black;
 }
@@ -201,7 +215,6 @@ header .menu li:last-child a {
 
 .hero-content p {
     font-size: 20px;
-    font-family: 400;
     color: white;
 }
 
@@ -474,18 +487,6 @@ footer .contact-us ul {
     color: #4A60A1;
 }
 
-.listing-info ul.features {
-    display: flex;
-    gap: 24px;
-    margin-top: 16px;
-}
-
-.listing-info ul.features li {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #6D737A;
-}
 
 .listing-footer {
     border-top: 1px solid #E7E9EB;
@@ -614,4 +615,198 @@ footer .contact-us ul {
     font-size: 20px;
     margin-bottom: 32px;
     font-weight: 400;
+}
+
+
+/* ## Page Header  */
+section.page-header {
+    padding: 65px 0;
+    background-image: url('../images/location/house-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 52px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.page-header ul{
+    color: white;
+    font-size: 16px;
+    gap: 5px;
+    justify-content: center;
+}
+
+section.page-header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(6, 48, 83, 0.7), rgba(6, 48, 83, 0.7));
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* ## Page Content */
+main.page-content {
+    padding: 100px 0;
+}
+.properties-listing-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.properties-listing-filter ul:first-child {
+    gap: 16px;
+    align-items: center;
+}
+/* .properties-listing-filter ul:first-child {
+    display: flex;
+} */
+.properties-listing-filter ul:first-child li, .properties-listing-filter ul:first-child li select {
+    font-size: 16px;
+    border: 0;
+}
+
+.properties-listing-filter ul:first-child li label {
+    color: #1B1D1F;
+}
+
+.properties-listing-filter ul:first-child li select {
+    color: #6D737A;
+}
+
+.properties-listing-filter ul:first-child li {
+    color: #6D737A;
+}
+
+.properties-listing-filter ul:first-child li.active {
+    color: black;
+}
+
+.properties-listing-filter ul:last-child {
+    gap: 32px;
+    align-items: center;
+}
+
+
+
+.properties-listing-filter ul:last-child li {
+    color: #1B1D1F;
+}
+
+.properties-listing-filter ul:last-child li.active {
+    font-weight: 600;
+}
+
+
+/* ## Pagination  */
+ul.pagination {
+    justify-content: center;
+    gap: 16px;
+    margin-top: 50px;
+}
+.pagination li {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEFF6;
+    color: #4A60A1;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagination li:hover, 
+.pagination li.active {
+    background-color: #4A60A1;
+    color: white;
+}
+
+
+/* Listing Type 2 */
+.listing-card.listing-type-2 {
+    display: flex;
+    background: transparent;
+    overflow: visible;
+    box-shadow: unset;
+    gap: 75px;
+}
+
+.listing-card.listing-type-2 .listing-view {
+    width: 55%;
+    height: unset;
+}
+.listing-card.listing-type-2 .listing-info {
+    width: 45%;
+}
+
+.listing-card.listing-type-2 .listing-view img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+
+.listing-card.listing-type-2 .listing-footer {
+    padding-top: 0;
+    border: none;
+    margin-bottom: 24px;
+}
+
+.listing-card.listing-type-2 .listing-info h3 {
+    color: #4A60A1;
+}
+.listing-card.listing-type-2 .listing-info .amount {
+    font-size: 44px;
+}
+
+.listing-card.listing-type-2 .listing-info > p {
+    color: #889099;
+    margin-bottom: 16px;
+}
+
+.listing-card.listing-type-2 .listing-view {
+    position: relative;
+}
+
+.listing-card.listing-type-2 ul.listing-features {
+    background-color: white;
+    padding: 24px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 28px;
+    right: -50px;
+    box-shadow: 0px 25.697px 72.8081px rgba(59, 77, 129, 0.08);
+}
+
+
+.listing-row {
+    gap: 100px !important
+}
+.listing-row .listing-card:nth-child(odd) .listing-view{
+    order: 1;
+    display: flex;
+}
+.listing-row .listing-card:nth-child(odd) .listing-info {
+    order: 0;
+}
+
+.listing-row .listing-card .listing-info{
+    padding: 0;
+}
+
+.listing-row .listing-card:nth-child(even) ul.listing-features {
+    right: auto;
+    left: -50px;
 }

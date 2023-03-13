@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <section class="top-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-4 top-header-left">
+                    <a href="#">
+                        <img src="/icons/envelop-open.svg" alt="">
+                        <div>
+                            <strong>Email us at</strong> : example@mail.com
+                        </div>
+                    </a>
+                </div>
+                <div class="col-8 top-header-right">
+                    <ul class="social-media">
+                        <li><a href="#">
+                            <img src="/icons/facebook.svg" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="/icons/dribbble.svg" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="/icons/linkedin.svg" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="/icons/instagram.svg" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="/icons/behance.svg" alt="">
+                        </a></li>
+                    </ul>
+                    <a href="">
+                        <img src="/icons/call.svg" alt="">
+                        <span>123-4567 890</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Primary Header  -->
+    <header>
+        <div class="container-fluid">
+            <div class="primary-nav">
+                <a href="#" class="logo">
+                    <img src="/images/logo.svg" alt="">
+                </a>
+                <div class="menu-toggle ">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line><line x1="40" y1="64" x2="216" y2="64" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line><line x1="40" y1="192" x2="216" y2="192" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line></svg>
+                    <svg class="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="200" y1="56" x2="56" y2="200" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line><line x1="200" y1="200" x2="56" y2="56" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line></svg>
+                </div>
+                <ul class="menu ">
+                    <li><a href="#"> HOME </a></li>
+                    <li><a href="#">ABOUT US  </a></li>
+                    <li><a href="#"> OUR AGENTS </a></li>
+                    <li><a href="#"> PROPERTIES </a></li>
+                    <li><a href="#"> GALLERY </a></li>
+                    <li><a href="#"> BLOG </a></li>
+                    <li><a href="#"> CONTACT US </a></li>
+                    <li><a href="#"> SEARCH </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Properties</h1>
+            <ul>
+                <li>Home</li> /
+                <li>Properties</li>
+            </ul>
+        </div>
+    </section>
+    
+    <main class="page-content">
+        <div class="container">
+            <div class="properties-listing-filter">
+                <ul>
+                    <li class="active">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 4.5H4.5V10.5H10.5V4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.5 4.5H13.5V10.5H19.5V4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 13.5H4.5V19.5H10.5V13.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.5 13.5H13.5V19.5H19.5V13.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.25 6H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.25 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.25 18H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.125 7.125C4.74632 7.125 5.25 6.62132 5.25 6C5.25 5.37868 4.74632 4.875 4.125 4.875C3.50368 4.875 3 5.37868 3 6C3 6.62132 3.50368 7.125 4.125 7.125Z" fill="currentColor"/>
+                            <path d="M4.125 13.125C4.74632 13.125 5.25 12.6213 5.25 12C5.25 11.3787 4.74632 10.875 4.125 10.875C3.50368 10.875 3 11.3787 3 12C3 12.6213 3.50368 13.125 4.125 13.125Z" fill="currentColor"/>
+                            <path d="M4.125 19.125C4.74632 19.125 5.25 18.6213 5.25 18C5.25 17.3787 4.74632 16.875 4.125 16.875C3.50368 16.875 3 17.3787 3 18C3 18.6213 3.50368 19.125 4.125 19.125Z" fill="currentColor"/>
+                            </svg>
+                    </li>
+                    <li>
+                        <label>
+                            Sort by: 
+                            <select name="" id="">
+                                <option value="0">Default Order</option>
+                                <option value="0">Option 1</option>
+                                <option value="0">Option 2</option>
+                                <option value="0">Option 3</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="active">All Properties</li>
+                    <li>For Buy</li>
+                    <li>For Sell</li>
+                    <li>For Rent</li>
+                </ul>
+            </div>
+            <div class="row listing-row">
+                <a href="#" class="col-12 listing-card listing-type-2">
+                    <div class="listing-view">
+                        <img src="images/location/house-4.jpg" alt="">
+                        <div class="hot-labels">
+                            <div class="label">
+                                Hot offer
+                            </div>
+                            <div class="label">
+                                Sale
+                            </div>
+                        </div>
+                        <ul class="listing-features">
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.19696 12.1592H23.197" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 18.1592V20.4092C21.697 20.6081 21.6179 20.7989 21.4773 20.9395C21.3366 21.0802 21.1459 21.1592 20.947 21.1592H18.697C18.498 21.1592 18.3073 21.0802 18.1666 20.9395C18.026 20.7989 17.947 20.6081 17.947 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.44696 18.1592V20.4092C7.44696 20.6081 7.36794 20.7989 7.22729 20.9395C7.08664 21.0802 6.89587 21.1592 6.69696 21.1592H4.44696C4.24805 21.1592 4.05728 21.0802 3.91663 20.9395C3.77598 20.7989 3.69696 20.6081 3.69696 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M6.69696 15.1594H8.19696" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.197 15.1594H18.697" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 12.1592L18.8938 5.85918C18.8357 5.7259 18.74 5.6124 18.6185 5.53251C18.497 5.45261 18.3549 5.40976 18.2095 5.40918H7.18446C7.03904 5.40976 6.89693 5.45261 6.77542 5.53251C6.65391 5.6124 6.55825 5.7259 6.50009 5.85918L3.69696 12.1592V18.1592H21.697V12.1592Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.87125 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.3712 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.37122 10.6594V5.78442C5.37122 5.28714 5.56876 4.81023 5.92039 4.4586C6.27202 4.10697 6.74894 3.90942 7.24622 3.90942C7.7435 3.90942 8.22041 4.10697 8.57204 4.4586C8.92367 4.81023 9.12122 5.28714 9.12122 5.78442" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 9.90918H12.8712V14.4092H18.8712V9.90918Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 10.6592H21.8712C22.0701 10.6592 22.2609 10.7382 22.4015 10.8788C22.5422 11.0195 22.6212 11.2103 22.6212 11.4092V14.4092C22.6212 15.6027 22.1471 16.7472 21.3032 17.5912C20.4593 18.4351 19.3147 18.9092 18.1212 18.9092H6.12122C4.92774 18.9092 3.78315 18.4351 2.93924 17.5912C2.09532 16.7472 1.62122 15.6027 1.62122 14.4092V11.4092C1.62122 11.2103 1.70023 11.0195 1.84089 10.8788C1.98154 10.7382 2.1723 10.6592 2.37122 10.6592H12.8712" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.2954 5.40918H20.0454V9.15918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 10.6592L20.0454 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M8.79544 20.4092H5.04544V16.6592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 15.1594L5.04544 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20.0454 16.6592V20.4092H16.2954" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 15.1594L20.0454 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.04544 9.15918V5.40918H8.79544" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 10.6592L5.04544 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>2,096.00 ft</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listing-info">
+                        <div class="listing-footer">
+                            <div class="owner">
+                                <img src="/images/location/house-4.jpg" alt="">
+                                <p>Jenny Wilson</p>
+                            </div>
+                            <ul class="actions">
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.69189 14.73C7.21068 14.73 8.44189 13.4988 8.44189 11.98C8.44189 10.4612 7.21068 9.22998 5.69189 9.22998C4.17311 9.22998 2.94189 10.4612 2.94189 11.98C2.94189 13.4988 4.17311 14.73 5.69189 14.73Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 20.9175C16.8357 20.9175 18.0669 19.6863 18.0669 18.1675C18.0669 16.6487 16.8357 15.4175 15.3169 15.4175C13.7981 15.4175 12.5669 16.6487 12.5669 18.1675C12.5669 19.6863 13.7981 20.9175 15.3169 20.9175Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 8.54248C16.8357 8.54248 18.0669 7.31126 18.0669 5.79248C18.0669 4.2737 16.8357 3.04248 15.3169 3.04248C13.7981 3.04248 12.5669 4.2737 12.5669 5.79248C12.5669 7.31126 13.7981 8.54248 15.3169 8.54248Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M13.0052 7.2793L8.00366 10.4934" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.00366 13.4666L13.0052 16.6806" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6061 19.5425C11.6061 19.5425 3.01233 14.73 3.01233 8.88624C3.01233 7.85317 3.37025 6.85201 4.02521 6.0531C4.68016 5.25419 5.59168 4.70687 6.60469 4.50427C7.61769 4.30167 8.6696 4.4563 9.58145 4.94185C10.4933 5.42741 11.2087 6.21389 11.6061 7.16749V7.16749C12.0034 6.21389 12.7189 5.42741 13.6307 4.94185C14.5426 4.4563 15.5945 4.30167 16.6075 4.50427C17.6205 4.70687 18.532 5.25419 19.187 6.0531C19.8419 6.85201 20.1998 7.85317 20.1998 8.88624C20.1998 14.73 11.6061 19.5425 11.6061 19.5425Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.45776 11.98H18.5828" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M11.0203 4.41748V19.5425" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>92 ALLIUM PLACE, ORLANDO FL 32827</h3>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit... readmore.</p>
+                        <span class="amount">$ 590,693</span>
+                    </div>
+                </a>
+                <a href="#" class="col-12 listing-card listing-type-2">
+                    <div class="listing-view">
+                        <img src="images/location/house-4.jpg" alt="">
+                        <div class="hot-labels">
+                            <div class="label">
+                                Hot offer
+                            </div>
+                            <div class="label">
+                                Sale
+                            </div>
+                        </div>
+                        <ul class="listing-features">
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.19696 12.1592H23.197" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 18.1592V20.4092C21.697 20.6081 21.6179 20.7989 21.4773 20.9395C21.3366 21.0802 21.1459 21.1592 20.947 21.1592H18.697C18.498 21.1592 18.3073 21.0802 18.1666 20.9395C18.026 20.7989 17.947 20.6081 17.947 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.44696 18.1592V20.4092C7.44696 20.6081 7.36794 20.7989 7.22729 20.9395C7.08664 21.0802 6.89587 21.1592 6.69696 21.1592H4.44696C4.24805 21.1592 4.05728 21.0802 3.91663 20.9395C3.77598 20.7989 3.69696 20.6081 3.69696 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M6.69696 15.1594H8.19696" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.197 15.1594H18.697" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 12.1592L18.8938 5.85918C18.8357 5.7259 18.74 5.6124 18.6185 5.53251C18.497 5.45261 18.3549 5.40976 18.2095 5.40918H7.18446C7.03904 5.40976 6.89693 5.45261 6.77542 5.53251C6.65391 5.6124 6.55825 5.7259 6.50009 5.85918L3.69696 12.1592V18.1592H21.697V12.1592Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.87125 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.3712 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.37122 10.6594V5.78442C5.37122 5.28714 5.56876 4.81023 5.92039 4.4586C6.27202 4.10697 6.74894 3.90942 7.24622 3.90942C7.7435 3.90942 8.22041 4.10697 8.57204 4.4586C8.92367 4.81023 9.12122 5.28714 9.12122 5.78442" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 9.90918H12.8712V14.4092H18.8712V9.90918Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 10.6592H21.8712C22.0701 10.6592 22.2609 10.7382 22.4015 10.8788C22.5422 11.0195 22.6212 11.2103 22.6212 11.4092V14.4092C22.6212 15.6027 22.1471 16.7472 21.3032 17.5912C20.4593 18.4351 19.3147 18.9092 18.1212 18.9092H6.12122C4.92774 18.9092 3.78315 18.4351 2.93924 17.5912C2.09532 16.7472 1.62122 15.6027 1.62122 14.4092V11.4092C1.62122 11.2103 1.70023 11.0195 1.84089 10.8788C1.98154 10.7382 2.1723 10.6592 2.37122 10.6592H12.8712" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.2954 5.40918H20.0454V9.15918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 10.6592L20.0454 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M8.79544 20.4092H5.04544V16.6592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 15.1594L5.04544 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20.0454 16.6592V20.4092H16.2954" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 15.1594L20.0454 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.04544 9.15918V5.40918H8.79544" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 10.6592L5.04544 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>2,096.00 ft</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listing-info">
+                        <div class="listing-footer">
+                            <div class="owner">
+                                <img src="/images/location/house-4.jpg" alt="">
+                                <p>Jenny Wilson</p>
+                            </div>
+                            <ul class="actions">
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.69189 14.73C7.21068 14.73 8.44189 13.4988 8.44189 11.98C8.44189 10.4612 7.21068 9.22998 5.69189 9.22998C4.17311 9.22998 2.94189 10.4612 2.94189 11.98C2.94189 13.4988 4.17311 14.73 5.69189 14.73Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 20.9175C16.8357 20.9175 18.0669 19.6863 18.0669 18.1675C18.0669 16.6487 16.8357 15.4175 15.3169 15.4175C13.7981 15.4175 12.5669 16.6487 12.5669 18.1675C12.5669 19.6863 13.7981 20.9175 15.3169 20.9175Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 8.54248C16.8357 8.54248 18.0669 7.31126 18.0669 5.79248C18.0669 4.2737 16.8357 3.04248 15.3169 3.04248C13.7981 3.04248 12.5669 4.2737 12.5669 5.79248C12.5669 7.31126 13.7981 8.54248 15.3169 8.54248Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M13.0052 7.2793L8.00366 10.4934" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.00366 13.4666L13.0052 16.6806" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6061 19.5425C11.6061 19.5425 3.01233 14.73 3.01233 8.88624C3.01233 7.85317 3.37025 6.85201 4.02521 6.0531C4.68016 5.25419 5.59168 4.70687 6.60469 4.50427C7.61769 4.30167 8.6696 4.4563 9.58145 4.94185C10.4933 5.42741 11.2087 6.21389 11.6061 7.16749V7.16749C12.0034 6.21389 12.7189 5.42741 13.6307 4.94185C14.5426 4.4563 15.5945 4.30167 16.6075 4.50427C17.6205 4.70687 18.532 5.25419 19.187 6.0531C19.8419 6.85201 20.1998 7.85317 20.1998 8.88624C20.1998 14.73 11.6061 19.5425 11.6061 19.5425Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.45776 11.98H18.5828" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M11.0203 4.41748V19.5425" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>92 ALLIUM PLACE, ORLANDO FL 32827</h3>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit... readmore.</p>
+                        <span class="amount">$ 590,693</span>
+                    </div>
+                </a>
+                <a href="#" class="col-12 listing-card listing-type-2">
+                    <div class="listing-view">
+                        <img src="images/location/house-4.jpg" alt="">
+                        <div class="hot-labels">
+                            <div class="label">
+                                Hot offer
+                            </div>
+                            <div class="label">
+                                Sale
+                            </div>
+                        </div>
+                        <ul class="listing-features">
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.19696 12.1592H23.197" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 18.1592V20.4092C21.697 20.6081 21.6179 20.7989 21.4773 20.9395C21.3366 21.0802 21.1459 21.1592 20.947 21.1592H18.697C18.498 21.1592 18.3073 21.0802 18.1666 20.9395C18.026 20.7989 17.947 20.6081 17.947 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.44696 18.1592V20.4092C7.44696 20.6081 7.36794 20.7989 7.22729 20.9395C7.08664 21.0802 6.89587 21.1592 6.69696 21.1592H4.44696C4.24805 21.1592 4.05728 21.0802 3.91663 20.9395C3.77598 20.7989 3.69696 20.6081 3.69696 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M6.69696 15.1594H8.19696" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.197 15.1594H18.697" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 12.1592L18.8938 5.85918C18.8357 5.7259 18.74 5.6124 18.6185 5.53251C18.497 5.45261 18.3549 5.40976 18.2095 5.40918H7.18446C7.03904 5.40976 6.89693 5.45261 6.77542 5.53251C6.65391 5.6124 6.55825 5.7259 6.50009 5.85918L3.69696 12.1592V18.1592H21.697V12.1592Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.87125 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.3712 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.37122 10.6594V5.78442C5.37122 5.28714 5.56876 4.81023 5.92039 4.4586C6.27202 4.10697 6.74894 3.90942 7.24622 3.90942C7.7435 3.90942 8.22041 4.10697 8.57204 4.4586C8.92367 4.81023 9.12122 5.28714 9.12122 5.78442" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 9.90918H12.8712V14.4092H18.8712V9.90918Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 10.6592H21.8712C22.0701 10.6592 22.2609 10.7382 22.4015 10.8788C22.5422 11.0195 22.6212 11.2103 22.6212 11.4092V14.4092C22.6212 15.6027 22.1471 16.7472 21.3032 17.5912C20.4593 18.4351 19.3147 18.9092 18.1212 18.9092H6.12122C4.92774 18.9092 3.78315 18.4351 2.93924 17.5912C2.09532 16.7472 1.62122 15.6027 1.62122 14.4092V11.4092C1.62122 11.2103 1.70023 11.0195 1.84089 10.8788C1.98154 10.7382 2.1723 10.6592 2.37122 10.6592H12.8712" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.2954 5.40918H20.0454V9.15918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 10.6592L20.0454 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M8.79544 20.4092H5.04544V16.6592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 15.1594L5.04544 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20.0454 16.6592V20.4092H16.2954" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 15.1594L20.0454 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.04544 9.15918V5.40918H8.79544" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 10.6592L5.04544 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>2,096.00 ft</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listing-info">
+                        <div class="listing-footer">
+                            <div class="owner">
+                                <img src="/images/location/house-4.jpg" alt="">
+                                <p>Jenny Wilson</p>
+                            </div>
+                            <ul class="actions">
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.69189 14.73C7.21068 14.73 8.44189 13.4988 8.44189 11.98C8.44189 10.4612 7.21068 9.22998 5.69189 9.22998C4.17311 9.22998 2.94189 10.4612 2.94189 11.98C2.94189 13.4988 4.17311 14.73 5.69189 14.73Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 20.9175C16.8357 20.9175 18.0669 19.6863 18.0669 18.1675C18.0669 16.6487 16.8357 15.4175 15.3169 15.4175C13.7981 15.4175 12.5669 16.6487 12.5669 18.1675C12.5669 19.6863 13.7981 20.9175 15.3169 20.9175Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 8.54248C16.8357 8.54248 18.0669 7.31126 18.0669 5.79248C18.0669 4.2737 16.8357 3.04248 15.3169 3.04248C13.7981 3.04248 12.5669 4.2737 12.5669 5.79248C12.5669 7.31126 13.7981 8.54248 15.3169 8.54248Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M13.0052 7.2793L8.00366 10.4934" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.00366 13.4666L13.0052 16.6806" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6061 19.5425C11.6061 19.5425 3.01233 14.73 3.01233 8.88624C3.01233 7.85317 3.37025 6.85201 4.02521 6.0531C4.68016 5.25419 5.59168 4.70687 6.60469 4.50427C7.61769 4.30167 8.6696 4.4563 9.58145 4.94185C10.4933 5.42741 11.2087 6.21389 11.6061 7.16749V7.16749C12.0034 6.21389 12.7189 5.42741 13.6307 4.94185C14.5426 4.4563 15.5945 4.30167 16.6075 4.50427C17.6205 4.70687 18.532 5.25419 19.187 6.0531C19.8419 6.85201 20.1998 7.85317 20.1998 8.88624C20.1998 14.73 11.6061 19.5425 11.6061 19.5425Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.45776 11.98H18.5828" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M11.0203 4.41748V19.5425" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>92 ALLIUM PLACE, ORLANDO FL 32827</h3>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit... readmore.</p>
+                        <span class="amount">$ 590,693</span>
+                    </div>
+                </a>
+                <a href="#" class="col-12 listing-card listing-type-2">
+                    <div class="listing-view">
+                        <img src="images/location/house-4.jpg" alt="">
+                        <div class="hot-labels">
+                            <div class="label">
+                                Hot offer
+                            </div>
+                            <div class="label">
+                                Sale
+                            </div>
+                        </div>
+                        <ul class="listing-features">
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.19696 12.1592H23.197" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 18.1592V20.4092C21.697 20.6081 21.6179 20.7989 21.4773 20.9395C21.3366 21.0802 21.1459 21.1592 20.947 21.1592H18.697C18.498 21.1592 18.3073 21.0802 18.1666 20.9395C18.026 20.7989 17.947 20.6081 17.947 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.44696 18.1592V20.4092C7.44696 20.6081 7.36794 20.7989 7.22729 20.9395C7.08664 21.0802 6.89587 21.1592 6.69696 21.1592H4.44696C4.24805 21.1592 4.05728 21.0802 3.91663 20.9395C3.77598 20.7989 3.69696 20.6081 3.69696 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M6.69696 15.1594H8.19696" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.197 15.1594H18.697" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 12.1592L18.8938 5.85918C18.8357 5.7259 18.74 5.6124 18.6185 5.53251C18.497 5.45261 18.3549 5.40976 18.2095 5.40918H7.18446C7.03904 5.40976 6.89693 5.45261 6.77542 5.53251C6.65391 5.6124 6.55825 5.7259 6.50009 5.85918L3.69696 12.1592V18.1592H21.697V12.1592Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.87125 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.3712 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.37122 10.6594V5.78442C5.37122 5.28714 5.56876 4.81023 5.92039 4.4586C6.27202 4.10697 6.74894 3.90942 7.24622 3.90942C7.7435 3.90942 8.22041 4.10697 8.57204 4.4586C8.92367 4.81023 9.12122 5.28714 9.12122 5.78442" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 9.90918H12.8712V14.4092H18.8712V9.90918Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 10.6592H21.8712C22.0701 10.6592 22.2609 10.7382 22.4015 10.8788C22.5422 11.0195 22.6212 11.2103 22.6212 11.4092V14.4092C22.6212 15.6027 22.1471 16.7472 21.3032 17.5912C20.4593 18.4351 19.3147 18.9092 18.1212 18.9092H6.12122C4.92774 18.9092 3.78315 18.4351 2.93924 17.5912C2.09532 16.7472 1.62122 15.6027 1.62122 14.4092V11.4092C1.62122 11.2103 1.70023 11.0195 1.84089 10.8788C1.98154 10.7382 2.1723 10.6592 2.37122 10.6592H12.8712" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.2954 5.40918H20.0454V9.15918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 10.6592L20.0454 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M8.79544 20.4092H5.04544V16.6592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 15.1594L5.04544 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20.0454 16.6592V20.4092H16.2954" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 15.1594L20.0454 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.04544 9.15918V5.40918H8.79544" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 10.6592L5.04544 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>2,096.00 ft</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listing-info">
+                        <div class="listing-footer">
+                            <div class="owner">
+                                <img src="/images/location/house-4.jpg" alt="">
+                                <p>Jenny Wilson</p>
+                            </div>
+                            <ul class="actions">
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.69189 14.73C7.21068 14.73 8.44189 13.4988 8.44189 11.98C8.44189 10.4612 7.21068 9.22998 5.69189 9.22998C4.17311 9.22998 2.94189 10.4612 2.94189 11.98C2.94189 13.4988 4.17311 14.73 5.69189 14.73Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 20.9175C16.8357 20.9175 18.0669 19.6863 18.0669 18.1675C18.0669 16.6487 16.8357 15.4175 15.3169 15.4175C13.7981 15.4175 12.5669 16.6487 12.5669 18.1675C12.5669 19.6863 13.7981 20.9175 15.3169 20.9175Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 8.54248C16.8357 8.54248 18.0669 7.31126 18.0669 5.79248C18.0669 4.2737 16.8357 3.04248 15.3169 3.04248C13.7981 3.04248 12.5669 4.2737 12.5669 5.79248C12.5669 7.31126 13.7981 8.54248 15.3169 8.54248Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M13.0052 7.2793L8.00366 10.4934" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.00366 13.4666L13.0052 16.6806" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6061 19.5425C11.6061 19.5425 3.01233 14.73 3.01233 8.88624C3.01233 7.85317 3.37025 6.85201 4.02521 6.0531C4.68016 5.25419 5.59168 4.70687 6.60469 4.50427C7.61769 4.30167 8.6696 4.4563 9.58145 4.94185C10.4933 5.42741 11.2087 6.21389 11.6061 7.16749V7.16749C12.0034 6.21389 12.7189 5.42741 13.6307 4.94185C14.5426 4.4563 15.5945 4.30167 16.6075 4.50427C17.6205 4.70687 18.532 5.25419 19.187 6.0531C19.8419 6.85201 20.1998 7.85317 20.1998 8.88624C20.1998 14.73 11.6061 19.5425 11.6061 19.5425Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.45776 11.98H18.5828" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M11.0203 4.41748V19.5425" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>92 ALLIUM PLACE, ORLANDO FL 32827</h3>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit... readmore.</p>
+                        <span class="amount">$ 590,693</span>
+                    </div>
+                </a>
+                <a href="#" class="col-12 listing-card listing-type-2">
+                    <div class="listing-view">
+                        <img src="images/location/house-4.jpg" alt="">
+                        <div class="hot-labels">
+                            <div class="label">
+                                Hot offer
+                            </div>
+                            <div class="label">
+                                Sale
+                            </div>
+                        </div>
+                        <ul class="listing-features">
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.19696 12.1592H23.197" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 18.1592V20.4092C21.697 20.6081 21.6179 20.7989 21.4773 20.9395C21.3366 21.0802 21.1459 21.1592 20.947 21.1592H18.697C18.498 21.1592 18.3073 21.0802 18.1666 20.9395C18.026 20.7989 17.947 20.6081 17.947 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.44696 18.1592V20.4092C7.44696 20.6081 7.36794 20.7989 7.22729 20.9395C7.08664 21.0802 6.89587 21.1592 6.69696 21.1592H4.44696C4.24805 21.1592 4.05728 21.0802 3.91663 20.9395C3.77598 20.7989 3.69696 20.6081 3.69696 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M6.69696 15.1594H8.19696" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.197 15.1594H18.697" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 12.1592L18.8938 5.85918C18.8357 5.7259 18.74 5.6124 18.6185 5.53251C18.497 5.45261 18.3549 5.40976 18.2095 5.40918H7.18446C7.03904 5.40976 6.89693 5.45261 6.77542 5.53251C6.65391 5.6124 6.55825 5.7259 6.50009 5.85918L3.69696 12.1592V18.1592H21.697V12.1592Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.87125 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.3712 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.37122 10.6594V5.78442C5.37122 5.28714 5.56876 4.81023 5.92039 4.4586C6.27202 4.10697 6.74894 3.90942 7.24622 3.90942C7.7435 3.90942 8.22041 4.10697 8.57204 4.4586C8.92367 4.81023 9.12122 5.28714 9.12122 5.78442" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 9.90918H12.8712V14.4092H18.8712V9.90918Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 10.6592H21.8712C22.0701 10.6592 22.2609 10.7382 22.4015 10.8788C22.5422 11.0195 22.6212 11.2103 22.6212 11.4092V14.4092C22.6212 15.6027 22.1471 16.7472 21.3032 17.5912C20.4593 18.4351 19.3147 18.9092 18.1212 18.9092H6.12122C4.92774 18.9092 3.78315 18.4351 2.93924 17.5912C2.09532 16.7472 1.62122 15.6027 1.62122 14.4092V11.4092C1.62122 11.2103 1.70023 11.0195 1.84089 10.8788C1.98154 10.7382 2.1723 10.6592 2.37122 10.6592H12.8712" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.2954 5.40918H20.0454V9.15918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 10.6592L20.0454 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M8.79544 20.4092H5.04544V16.6592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 15.1594L5.04544 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20.0454 16.6592V20.4092H16.2954" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 15.1594L20.0454 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.04544 9.15918V5.40918H8.79544" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 10.6592L5.04544 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>2,096.00 ft</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listing-info">
+                        <div class="listing-footer">
+                            <div class="owner">
+                                <img src="/images/location/house-4.jpg" alt="">
+                                <p>Jenny Wilson</p>
+                            </div>
+                            <ul class="actions">
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.69189 14.73C7.21068 14.73 8.44189 13.4988 8.44189 11.98C8.44189 10.4612 7.21068 9.22998 5.69189 9.22998C4.17311 9.22998 2.94189 10.4612 2.94189 11.98C2.94189 13.4988 4.17311 14.73 5.69189 14.73Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 20.9175C16.8357 20.9175 18.0669 19.6863 18.0669 18.1675C18.0669 16.6487 16.8357 15.4175 15.3169 15.4175C13.7981 15.4175 12.5669 16.6487 12.5669 18.1675C12.5669 19.6863 13.7981 20.9175 15.3169 20.9175Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 8.54248C16.8357 8.54248 18.0669 7.31126 18.0669 5.79248C18.0669 4.2737 16.8357 3.04248 15.3169 3.04248C13.7981 3.04248 12.5669 4.2737 12.5669 5.79248C12.5669 7.31126 13.7981 8.54248 15.3169 8.54248Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M13.0052 7.2793L8.00366 10.4934" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.00366 13.4666L13.0052 16.6806" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6061 19.5425C11.6061 19.5425 3.01233 14.73 3.01233 8.88624C3.01233 7.85317 3.37025 6.85201 4.02521 6.0531C4.68016 5.25419 5.59168 4.70687 6.60469 4.50427C7.61769 4.30167 8.6696 4.4563 9.58145 4.94185C10.4933 5.42741 11.2087 6.21389 11.6061 7.16749V7.16749C12.0034 6.21389 12.7189 5.42741 13.6307 4.94185C14.5426 4.4563 15.5945 4.30167 16.6075 4.50427C17.6205 4.70687 18.532 5.25419 19.187 6.0531C19.8419 6.85201 20.1998 7.85317 20.1998 8.88624C20.1998 14.73 11.6061 19.5425 11.6061 19.5425Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.45776 11.98H18.5828" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M11.0203 4.41748V19.5425" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>92 ALLIUM PLACE, ORLANDO FL 32827</h3>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit... readmore.</p>
+                        <span class="amount">$ 590,693</span>
+                    </div>
+                </a>
+                <a href="#" class="col-12 listing-card listing-type-2">
+                    <div class="listing-view">
+                        <img src="images/location/house-4.jpg" alt="">
+                        <div class="hot-labels">
+                            <div class="label">
+                                Hot offer
+                            </div>
+                            <div class="label">
+                                Sale
+                            </div>
+                        </div>
+                        <ul class="listing-features">
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.19696 12.1592H23.197" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 18.1592V20.4092C21.697 20.6081 21.6179 20.7989 21.4773 20.9395C21.3366 21.0802 21.1459 21.1592 20.947 21.1592H18.697C18.498 21.1592 18.3073 21.0802 18.1666 20.9395C18.026 20.7989 17.947 20.6081 17.947 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.44696 18.1592V20.4092C7.44696 20.6081 7.36794 20.7989 7.22729 20.9395C7.08664 21.0802 6.89587 21.1592 6.69696 21.1592H4.44696C4.24805 21.1592 4.05728 21.0802 3.91663 20.9395C3.77598 20.7989 3.69696 20.6081 3.69696 20.4092V18.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M6.69696 15.1594H8.19696" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.197 15.1594H18.697" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M21.697 12.1592L18.8938 5.85918C18.8357 5.7259 18.74 5.6124 18.6185 5.53251C18.497 5.45261 18.3549 5.40976 18.2095 5.40918H7.18446C7.03904 5.40976 6.89693 5.45261 6.77542 5.53251C6.65391 5.6124 6.55825 5.7259 6.50009 5.85918L3.69696 12.1592V18.1592H21.697V12.1592Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.87125 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.3712 18.9092V21.1592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.37122 10.6594V5.78442C5.37122 5.28714 5.56876 4.81023 5.92039 4.4586C6.27202 4.10697 6.74894 3.90942 7.24622 3.90942C7.7435 3.90942 8.22041 4.10697 8.57204 4.4586C8.92367 4.81023 9.12122 5.28714 9.12122 5.78442" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 9.90918H12.8712V14.4092H18.8712V9.90918Z" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18.8712 10.6592H21.8712C22.0701 10.6592 22.2609 10.7382 22.4015 10.8788C22.5422 11.0195 22.6212 11.2103 22.6212 11.4092V14.4092C22.6212 15.6027 22.1471 16.7472 21.3032 17.5912C20.4593 18.4351 19.3147 18.9092 18.1212 18.9092H6.12122C4.92774 18.9092 3.78315 18.4351 2.93924 17.5912C2.09532 16.7472 1.62122 15.6027 1.62122 14.4092V11.4092C1.62122 11.2103 1.70023 11.0195 1.84089 10.8788C1.98154 10.7382 2.1723 10.6592 2.37122 10.6592H12.8712" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.2954 5.40918H20.0454V9.15918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 10.6592L20.0454 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M8.79544 20.4092H5.04544V16.6592" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 15.1594L5.04544 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20.0454 16.6592V20.4092H16.2954" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.7954 15.1594L20.0454 20.4094" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.04544 9.15918V5.40918H8.79544" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2954 10.6592L5.04544 5.40918" stroke="currentColor" stroke-width="1.60606" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>2,096.00 ft</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listing-info">
+                        <div class="listing-footer">
+                            <div class="owner">
+                                <img src="/images/location/house-4.jpg" alt="">
+                                <p>Jenny Wilson</p>
+                            </div>
+                            <ul class="actions">
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.69189 14.73C7.21068 14.73 8.44189 13.4988 8.44189 11.98C8.44189 10.4612 7.21068 9.22998 5.69189 9.22998C4.17311 9.22998 2.94189 10.4612 2.94189 11.98C2.94189 13.4988 4.17311 14.73 5.69189 14.73Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 20.9175C16.8357 20.9175 18.0669 19.6863 18.0669 18.1675C18.0669 16.6487 16.8357 15.4175 15.3169 15.4175C13.7981 15.4175 12.5669 16.6487 12.5669 18.1675C12.5669 19.6863 13.7981 20.9175 15.3169 20.9175Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M15.3169 8.54248C16.8357 8.54248 18.0669 7.31126 18.0669 5.79248C18.0669 4.2737 16.8357 3.04248 15.3169 3.04248C13.7981 3.04248 12.5669 4.2737 12.5669 5.79248C12.5669 7.31126 13.7981 8.54248 15.3169 8.54248Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M13.0052 7.2793L8.00366 10.4934" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.00366 13.4666L13.0052 16.6806" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6061 19.5425C11.6061 19.5425 3.01233 14.73 3.01233 8.88624C3.01233 7.85317 3.37025 6.85201 4.02521 6.0531C4.68016 5.25419 5.59168 4.70687 6.60469 4.50427C7.61769 4.30167 8.6696 4.4563 9.58145 4.94185C10.4933 5.42741 11.2087 6.21389 11.6061 7.16749V7.16749C12.0034 6.21389 12.7189 5.42741 13.6307 4.94185C14.5426 4.4563 15.5945 4.30167 16.6075 4.50427C17.6205 4.70687 18.532 5.25419 19.187 6.0531C19.8419 6.85201 20.1998 7.85317 20.1998 8.88624C20.1998 14.73 11.6061 19.5425 11.6061 19.5425Z" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.45776 11.98H18.5828" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M11.0203 4.41748V19.5425" stroke="#4A60A1" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>92 ALLIUM PLACE, ORLANDO FL 32827</h3>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit... readmore.</p>
+                        <span class="amount">$ 590,693</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="pagination">
+                <li>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.25 12H3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>...</li>
+                <li>64</li>
+                <li class="active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 contact-us">
+                    <a href="#" class="logo">
+                        <img src="/images/logo.svg" alt="">
+                    </a>
+                    <h4>Contact Us</h4>
+                    <p>Call : +123 400 123</p>
+                    <p>Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.</p>
+                    <p>Email: example@mail.com</p>
+                    <ul class="social-media">
+                        <li><a href="#">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.2686 0.724403H10.3607C8.63501 0.724403 6.71559 1.46439 6.71559 4.01475C6.72401 4.9034 6.71559 5.75446 6.71559 6.71227H4.71924V9.95122H6.77737V19.2756H10.5593V9.88968H13.0555L13.2813 6.70318H10.4941C10.4941 6.70318 10.5004 5.28568 10.4941 4.87404C10.4941 3.86619 11.5227 3.92391 11.5846 3.92391C12.074 3.92391 13.0257 3.92536 13.27 3.92391V0.724403H13.2686Z" fill="currentColor"/>
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_302_373)">
+                                <path d="M0.437988 9C0.437988 7.4474 0.82044 6.01469 1.58531 4.70183C2.35019 3.38897 3.38907 2.35011 4.70191 1.58523C6.01477 0.820343 7.4475 0.437908 9.00008 0.437908C10.5527 0.437908 11.9854 0.820343 13.2983 1.58523C14.6111 2.35011 15.65 3.38897 16.4149 4.70183C17.1797 6.01469 17.5622 7.4474 17.5622 9C17.5622 10.5526 17.1797 11.9853 16.4149 13.2982C15.65 14.611 14.6111 15.6499 13.2983 16.4148C11.9854 17.1797 10.5527 17.5621 9.00008 17.5621C7.4475 17.5621 6.01477 17.1797 4.70191 16.4148C3.38907 15.6499 2.35019 14.611 1.58531 13.2982C0.82044 11.9853 0.437988 10.5526 0.437988 9ZM1.8593 9C1.8593 10.7809 2.45864 12.3506 3.65733 13.7092C4.20531 12.636 5.07294 11.6143 6.26021 10.6439C7.4475 9.67355 8.60622 9.06279 9.73642 8.81163C9.56518 8.41208 9.39966 8.05247 9.23982 7.73281C7.27626 8.3607 5.15286 8.67464 2.86962 8.67464C2.42439 8.67464 2.09333 8.66894 1.87642 8.65752C1.87642 8.70319 1.87358 8.76026 1.86786 8.82876C1.86216 8.89725 1.8593 8.95433 1.8593 9ZM2.08191 7.23621C2.33307 7.25904 2.7041 7.27046 3.19498 7.27046C5.10149 7.27046 6.91093 7.01359 8.62335 6.49987C7.75573 4.95869 6.80248 3.67438 5.76361 2.64693C4.86175 3.10358 4.0883 3.73717 3.44328 4.54771C2.79828 5.35825 2.34449 6.25443 2.08191 7.23621ZM4.63341 14.6339C5.92345 15.6385 7.379 16.1408 9.00008 16.1408C9.84488 16.1408 10.684 15.981 11.5173 15.6613C11.289 13.7092 10.8438 11.8198 10.1816 9.9932C9.13137 10.2215 8.07253 10.798 7.00511 11.7227C5.93771 12.6475 5.14714 13.6178 4.63341 14.6339ZM7.25341 2.09895C8.25804 3.13783 9.18845 4.43355 10.0447 5.98614C11.5973 5.33542 12.7674 4.50776 13.5551 3.50314C12.2308 2.40719 10.7125 1.85922 9.00008 1.85922C8.41786 1.85922 7.83564 1.93913 7.25341 2.09895ZM10.6611 7.20196C10.8324 7.56727 11.0265 8.02962 11.2433 8.58902C12.0882 8.5091 13.0071 8.46915 14.0003 8.46915C14.7082 8.46915 15.4102 8.48627 16.1066 8.52052C16.0153 6.96792 15.4559 5.58659 14.4284 4.37647C13.6864 5.48384 12.4306 6.42567 10.6611 7.20196ZM11.6715 9.78771C12.2537 11.4773 12.6475 13.2125 12.853 14.9935C13.7549 14.4112 14.4912 13.6635 15.062 12.7502C15.6329 11.8369 15.9753 10.8494 16.0895 9.78771C15.2561 9.73064 14.4969 9.70209 13.812 9.70209C13.1841 9.70209 12.4706 9.73064 11.6715 9.78771Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_302_373">
+                                <rect width="17.1242" height="17.1242" fill="currentColor" transform="translate(0.437988 0.437908)"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_302_538)">
+                                <path d="M6.14651 9C6.14651 7.42383 7.42391 6.14574 9.00008 6.14574C10.5763 6.14574 11.8543 7.42383 11.8543 9C11.8543 10.5762 10.5763 11.8543 9.00008 11.8543C7.42391 11.8543 6.14651 10.5762 6.14651 9ZM4.60354 9C4.60354 11.4282 6.57185 13.3965 9.00008 13.3965C11.4283 13.3965 13.3966 11.4282 13.3966 9C13.3966 6.57177 11.4283 4.60346 9.00008 4.60346C6.57185 4.60346 4.60354 6.57177 4.60354 9ZM12.5432 4.42917C12.5432 4.99629 13.0031 5.4569 13.5709 5.4569C14.138 5.4569 14.5986 4.99629 14.5986 4.42917C14.5986 3.86205 14.1387 3.40213 13.5709 3.40213C13.0031 3.40213 12.5432 3.86205 12.5432 4.42917ZM5.54066 15.9693C4.70589 15.9313 4.2522 15.7923 3.95066 15.6747C3.55091 15.5191 3.26597 15.3337 2.96581 15.0343C2.66635 14.7348 2.4803 14.4499 2.32538 14.0501C2.20781 13.7486 2.0688 13.2949 2.03076 12.4601C1.98926 11.5576 1.98096 11.2865 1.98096 9C1.98096 6.71355 1.98995 6.44313 2.03076 5.53989C2.0688 4.70512 2.2085 4.25212 2.32538 3.94989C2.48099 3.55014 2.66635 3.2652 2.96581 2.96504C3.26528 2.66557 3.55022 2.47953 3.95066 2.32461C4.2522 2.20704 4.70589 2.06803 5.54066 2.02999C6.44321 1.98849 6.71432 1.98019 9.00008 1.98019C11.2865 1.98019 11.557 1.98918 12.4602 2.02999C13.295 2.06803 13.748 2.20773 14.0502 2.32461C14.4499 2.47953 14.7349 2.66557 15.035 2.96504C15.3345 3.2645 15.5199 3.55014 15.6755 3.94989C15.793 4.25143 15.9321 4.70512 15.9701 5.53989C16.0116 6.44313 16.0199 6.71355 16.0199 9C16.0199 11.2858 16.0116 11.5569 15.9701 12.4601C15.9321 13.2949 15.7924 13.7486 15.6755 14.0501C15.5199 14.4499 15.3345 14.7348 15.035 15.0343C14.7356 15.3337 14.4499 15.5191 14.0502 15.6747C13.7487 15.7923 13.295 15.9313 12.4602 15.9693C11.5576 16.0108 11.2865 16.0191 9.00008 16.0191C6.71432 16.0191 6.44321 16.0108 5.54066 15.9693V15.9693ZM5.47012 0.489779C4.55858 0.531275 3.93614 0.675821 3.39184 0.887453C2.82887 1.106 2.35166 1.39924 1.87515 1.87507C1.39932 2.35089 1.10608 2.8281 0.887533 3.39176C0.675901 3.93606 0.531355 4.5585 0.489859 5.47004C0.447671 6.38296 0.437988 6.67482 0.437988 9C0.437988 11.3252 0.447671 11.617 0.489859 12.53C0.531355 13.4415 0.675901 14.0639 0.887533 14.6082C1.10608 15.1712 1.39863 15.6491 1.87515 16.1249C2.35097 16.6008 2.82818 16.8933 3.39184 17.1125C3.93683 17.3242 4.55858 17.4687 5.47012 17.5102C6.38373 17.5517 6.6749 17.5621 9.00008 17.5621C11.326 17.5621 11.6171 17.5524 12.53 17.5102C13.4416 17.4687 14.064 17.3242 14.6083 17.1125C15.1713 16.8933 15.6485 16.6008 16.125 16.1249C16.6008 15.6491 16.8934 15.1712 17.1126 14.6082C17.3243 14.0639 17.4695 13.4415 17.5103 12.53C17.5518 11.6163 17.5615 11.3252 17.5615 9C17.5615 6.67482 17.5518 6.38296 17.5103 5.47004C17.4688 4.5585 17.3243 3.93606 17.1126 3.39176C16.8934 2.82879 16.6008 2.35158 16.125 1.87507C15.6492 1.39924 15.1713 1.106 14.609 0.887453C14.064 0.675821 13.4416 0.530583 12.5307 0.489779C11.6178 0.448282 11.326 0.437908 9.00077 0.437908C6.6749 0.437908 6.38373 0.447591 5.47012 0.489779" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_302_538">
+                                <rect width="17.1242" height="17.1242" fill="currentColor" transform="translate(0.437988 0.437908)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_302_208)">
+                                <path d="M0.437988 2.42684C0.437988 1.85026 0.630834 1.37459 1.01651 0.999828C1.40218 0.625051 1.90358 0.437672 2.52066 0.437672C3.12673 0.437672 3.61709 0.622163 3.99175 0.99118C4.37743 1.37172 4.57027 1.86756 4.57027 2.47873C4.57027 3.03224 4.38295 3.49349 4.00828 3.8625C3.62261 4.24304 3.11571 4.43331 2.4876 4.43331H2.47107C1.865 4.43331 1.37464 4.24304 0.999979 3.8625C0.625313 3.48197 0.437988 3.00341 0.437988 2.42684ZM0.652867 17.5618V6.00735H4.32234V17.5618H0.652867ZM6.35542 17.5618H10.0249V11.11C10.0249 10.7064 10.069 10.395 10.1571 10.176C10.3114 9.78388 10.5456 9.45234 10.8596 9.18137C11.1737 8.91037 11.5676 8.77489 12.0414 8.77489C13.2756 8.77489 13.8927 9.6455 13.8927 11.3868V17.5618H17.5622V10.937C17.5622 9.23037 17.1765 7.93598 16.4051 7.05382C15.6338 6.17167 14.6145 5.73059 13.3472 5.73059C11.9257 5.73059 10.8183 6.37059 10.0249 7.65057V7.68517H10.0084L10.0249 7.65057V6.00735H6.35542C6.37745 6.37635 6.38848 7.52372 6.38848 9.44947C6.38848 11.3752 6.37745 14.0793 6.35542 17.5618Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_302_208">
+                                <rect width="17.1242" height="17.1242" fill="currentColor" transform="translate(0.437988 0.437908)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_302_472)">
+                                <path d="M7.3479 8.07677C7.3479 8.07677 8.96813 7.95805 8.96813 6.0827C8.96813 4.20721 7.64257 3.29194 5.96348 3.29194H0.438232V13.7724H5.96348C5.96348 13.7724 9.33644 13.8776 9.33644 10.6791C9.33644 10.6791 9.4835 8.07677 7.3479 8.07677V8.07677ZM5.56578 5.15473H5.96348C5.96348 5.15473 6.71452 5.15473 6.71452 6.24517C6.71452 7.33549 6.27283 7.49357 5.77183 7.49357H2.87273V5.15473H5.56578V5.15473ZM5.80735 11.9097H2.87273V9.10892H5.96348C5.96348 9.10892 7.08288 9.09443 7.08288 10.5482C7.08288 11.7741 6.2468 11.9004 5.80735 11.9097V11.9097ZM13.8349 5.95848C9.75154 5.95848 9.75515 9.9854 9.75515 9.9854C9.75515 9.9854 9.47499 13.9916 13.8349 13.9916C13.8349 13.9916 17.4681 14.1965 17.4681 11.2047H15.5996C15.5996 11.2047 15.6619 12.3314 13.8972 12.3314C13.8972 12.3314 12.0284 12.455 12.0284 10.508H17.5304C17.5304 10.508 18.1324 5.95848 13.8349 5.95848ZM12.0079 9.10892C12.0079 9.10892 12.236 7.49354 13.8764 7.49354C15.5164 7.49354 15.4959 9.10892 15.4959 9.10892H12.0079ZM15.9311 5.19997H11.5504V3.90937H15.9311V5.19997Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_302_472">
+                                <rect width="17.1242" height="17.1242" fill="currentColor" transform="translate(0.437988 0.437908)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 footer-menu-group">
+                            <h4>Features</h4>
+                            <ul>
+                                <li><a href="#"> Home </a></li>
+                                <li><a href="#"> Become a Host </a></li>
+                                <li><a href="#"> Pricing </a></li>
+                                <li><a href="#"> Blog </a></li>
+                                <li><a href="#"> Contact </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4 footer-menu-group">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#"> About Us </a></li>
+                                <li><a href="#"> Press </a></li>
+                                <li><a href="#"> Contact </a></li>
+                                <li><a href="#"> Careers </a></li>
+                                <li><a href="#"> Blog </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-4 footer-menu-group">
+                            <h4>Team and policies</h4>
+                            <ul>
+                                <li><a href="#"> Terms of servies </a></li>
+                                <li><a href="#"> Privacy Policy </a></li>
+                                <li><a href="#"> Security </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
